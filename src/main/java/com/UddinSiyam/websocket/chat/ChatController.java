@@ -16,7 +16,7 @@ public class ChatController {
     ) {
         return chatMessage;
     }
-//
+
     @MessageMapping("/chat.addUser")
     @SendTo("/topic/public")
     public ChatMessage addUser(
