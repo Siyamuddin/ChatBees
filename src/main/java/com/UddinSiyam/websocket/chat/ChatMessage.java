@@ -1,7 +1,5 @@
 package com.UddinSiyam.websocket.chat;
-
 import lombok.*;
-
 @Getter
 @Setter
 @AllArgsConstructor
