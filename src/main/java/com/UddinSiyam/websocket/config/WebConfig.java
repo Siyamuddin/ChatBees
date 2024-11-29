@@ -9,7 +9,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/ws/**")
-                .allowedOrigins("'/topic/public'","/ws","/app/chat.addUser","/app/chat.sendMessage")  // Update with your front-end URL
+                .allowedOrigins("'/topic/public'","/ws/**","/app/chat.addUser","/app/chat.sendMessage")  // Update with your front-end URL
                 .allowedMethods("*")
                 .allowCredentials(true);
     }
